@@ -1,0 +1,64 @@
+{
+  "name": "@repo/registry",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./src/schema.ts",
+      "import": "./src/schema.ts"
+    },
+    "./items/components/testimonial-card/meta": {
+      "types": "./src/items/components/testimonial-card/meta.ts",
+      "import": "./src/items/components/testimonial-card/meta.ts"
+    },
+    "./items/components/testimonial-card/preview": {
+      "types": "./src/items/components/testimonial-card/preview.tsx",
+      "import": "./src/items/components/testimonial-card/preview.tsx"
+    },
+    "./items/components/testimonial-card/source": {
+      "types": "./src/items/components/testimonial-card/source.tsx",
+      "import": "./src/items/components/testimonial-card/source.tsx"
+    },
+    "./items/sections/hero-split-image/meta": {
+      "types": "./src/items/sections/hero-split-image/meta.ts",
+      "import": "./src/items/sections/hero-split-image/meta.ts"
+    },
+    "./items/sections/hero-split-image/preview": {
+      "types": "./src/items/sections/hero-split-image/preview.tsx",
+      "import": "./src/items/sections/hero-split-image/preview.tsx"
+    },
+    "./items/sections/hero-split-image/source": {
+      "types": "./src/items/sections/hero-split-image/source.tsx",
+      "import": "./src/items/sections/hero-split-image/source.tsx"
+    },
+    "./items/templates/saas-landing-v1/meta": {
+      "types": "./src/items/templates/saas-landing-v1/meta.ts",
+      "import": "./src/items/templates/saas-landing-v1/meta.ts"
+    },
+    "./items/templates/saas-landing-v1/preview": {
+      "types": "./src/items/templates/saas-landing-v1/preview.tsx",
+      "import": "./src/items/templates/saas-landing-v1/preview.tsx"
+    }
+  },
+  "scripts": {
+    "build": "echo 'No build needed - source files used directly'",
+    "build:index": "tsx scripts/build-index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
